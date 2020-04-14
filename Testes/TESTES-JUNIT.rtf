@@ -1,4 +1,5 @@
-{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}}
+{\colortbl ;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;\red0\green0\blue192;}
 {\*\generator Riched20 10.0.18362}\viewkind4\uc1 
 \pard\sa200\sl276\slmult1\f0\fs22\lang22 NOME - LEONARDO RODRIGUES SELMES\par
 RM - 81984\par
@@ -7200,7 +7201,25 @@ a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
 a0ffffffffffffcccccc000000030000000000
 }\par
 \par
+CORRE\'c7\'c3O DOS ERROS ENCONTRADOS:\par
 \par
+Observa\'e7\'f4es: Foram Arrumados os retornos de acordo com o algor\'edtimo fornecido.\par
+\par
+\cf1\f1\fs20\tab\cf2\b public\cf1\b0  \cf2\b int\cf1\b0  calculaPena(String \cf3 respostaPrisioneiroA\cf1 , String \cf3 respostaPrisioneiroB\cf1 ) \{\cf0\par
+\cf1\tab\tab\cf2\b if\cf1\b0  (\cf3 respostaPrisioneiroA\cf1  == \cf4 "CULPADO"\cf1 ) \{\cf0\par
+\cf1\tab\tab\tab\cf2\b if\cf1\b0  (\cf3 respostaPrisioneiroB\cf1  == \cf4 "CULPADO"\cf1 ) \{\cf0\par
+\cf1\tab\tab\tab\tab\cf2\b return\cf1\b0  \cf5 PENA_CONDENACAO_MUTUA\cf1 ;\cf0\par
+\cf1\tab\tab\tab\} \cf2\b else\cf1\b0  \{\cf0\par
+\cf1\tab\tab\tab\tab\cf2\b return\cf1\b0  \cf5 PENA_CONDENACAO_INDIVIDUAL\cf1 ;\cf0\par
+\cf1\tab\tab\tab\}\cf0\par
+\cf1\tab\tab\} \cf2\b else\cf1\b0  \{\cf0\par
+\cf1\tab\tab\tab\cf2\b if\cf1\b0  (\cf3 respostaPrisioneiroB\cf1  == \cf4 "CULPADO"\cf1 ) \{\cf0\par
+\cf1\tab\tab\tab\tab\cf2\b return\cf1\b0  \cf5 PENA_CONDENACAO_CUMPLICES\cf1 ;\cf0\par
+\cf1\tab\tab\tab\} \cf2\b else\cf1\b0  \{\cf0\par
+\cf1\tab\tab\tab\tab\cf2\b return\cf1\b0  \cf5 PENA_INOCENCIA\cf1 ;\cf0\par
+\cf1\tab\tab\tab\}\cf0\par
+\cf1\tab\tab\}\cf0\par
+\cf1\tab\}\cf0\f0\fs22\par
 \par
 \par
 \par
